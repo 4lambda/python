@@ -12,6 +12,7 @@ FROM base as py-base
 
 RUN             python3 -m pip --no-cache-dir install -U pip==22.1.2 && \
                 python3 -m pip --no-cache-dir install -U \
+                    build==0.8.0 \
                     setuptools==63.1.0 \
                     virtualenv==20.15.1 \
                     wheel==0.37.1 
